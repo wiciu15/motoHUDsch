@@ -1981,12 +1981,12 @@ Circuit not tested on vehicle!
 $Comp
 L Connector:TestPoint TP7
 U 1 1 5D5733F6
-P 10750 4600
-F 0 "TP7" H 10808 4720 50  0000 L CNN
-F 1 "PA0" H 10808 4629 50  0000 L CNN
-F 2 "motoHUD:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 10950 4600 50  0001 C CNN
-F 3 "" H 10950 4600 50  0001 C CNN
-	1    10750 4600
+P 10750 4300
+F 0 "TP7" H 10808 4420 50  0000 L CNN
+F 1 "PA0" H 10808 4329 50  0000 L CNN
+F 2 "motoHUD:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 10950 4300 50  0001 C CNN
+F 3 "" H 10950 4300 50  0001 C CNN
+	1    10750 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3084,7 +3084,7 @@ Wire Wire Line
 	6250 1450 6300 1450
 Connection ~ 6300 1450
 Text GLabel 11200 4700 2    50   Input ~ 0
-USERIN
+USERIN1
 Wire Notes Line
 	16000 1200 16000 1950
 Wire Notes Line
@@ -3092,42 +3092,36 @@ Wire Notes Line
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5DA294A1
-P 15050 850
-F 0 "SW1" H 15050 800 50  0000 C CNN
-F 1 "TACTM-613N-F" H 15050 700 50  0000 C CNN
-F 2 "motoHUD:TACTM-613N-F" H 15050 1050 50  0001 C CNN
-F 3 "https://www.tme.eu/pl/details/tactm-613n-f/mikroprzelaczniki-tact/ninigi/" H 15050 1050 50  0001 C CNN
-	1    15050 850 
+P 7750 8750
+F 0 "SW1" H 7750 8700 50  0000 C CNN
+F 1 "TACTM-613N-F" H 7750 8600 50  0000 C CNN
+F 2 "motoHUD:TACTM-613N-F" H 7750 8950 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/tactm-613n-f/mikroprzelaczniki-tact/ninigi/" H 7750 8950 50  0001 C CNN
+	1    7750 8750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR070
 U 1 1 5DA2A3A3
-P 15700 850
-F 0 "#PWR070" H 15700 600 50  0001 C CNN
-F 1 "GND" H 15705 677 50  0000 C CNN
-F 2 "" H 15700 850 50  0001 C CNN
-F 3 "" H 15700 850 50  0001 C CNN
-	1    15700 850 
+P 8400 8750
+F 0 "#PWR070" H 8400 8500 50  0001 C CNN
+F 1 "GND" H 8405 8577 50  0000 C CNN
+F 2 "" H 8400 8750 50  0001 C CNN
+F 3 "" H 8400 8750 50  0001 C CNN
+	1    8400 8750
 	1    0    0    -1  
 $EndComp
-Text GLabel 14650 850  0    50   Input ~ 0
-USERIN
+Text GLabel 7350 8750 0    50   Input ~ 0
+USERIN1
 Wire Wire Line
-	15700 850  15250 850 
+	8400 8750 7950 8750
 Wire Wire Line
-	14850 850  14650 850 
+	7550 8750 7350 8750
 Wire Notes Line
-	16000 1150 14050 1150
+	6750 8350 8700 8350
 Wire Notes Line
-	14050 1150 14050 500 
-Wire Notes Line
-	14050 500  16000 500 
-Wire Notes Line
-	16000 500  16000 1150
-Wire Notes Line
-	16000 650  14050 650 
-Text Notes 14600 650  0    98   ~ 0
+	8700 8500 6750 8500
+Text Notes 7300 8500 0    98   ~ 0
 USER INPUT
 Wire Notes Line
 	2750 500  2750 1100
@@ -3184,4 +3178,45 @@ Wire Wire Line
 	13950 5750 15300 5750
 Wire Wire Line
 	13950 5850 15300 5850
+Text GLabel 11200 4300 2    50   Input ~ 0
+USERIN2
+Wire Wire Line
+	10750 4600 10750 4300
+Wire Wire Line
+	11200 4300 10750 4300
+Connection ~ 10750 4300
+Text GLabel 7350 9250 0    50   Input ~ 0
+USERIN2
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5DA9863F
+P 7750 9250
+F 0 "SW2" H 7750 9200 50  0000 C CNN
+F 1 "TACTM-613N-F" H 7750 9100 50  0000 C CNN
+F 2 "motoHUD:TACTM-613N-F" H 7750 9450 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/tactm-613n-f/mikroprzelaczniki-tact/ninigi/" H 7750 9450 50  0001 C CNN
+	1    7750 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR071
+U 1 1 5DA98759
+P 8450 9250
+F 0 "#PWR071" H 8450 9000 50  0001 C CNN
+F 1 "GND" H 8455 9077 50  0000 C CNN
+F 2 "" H 8450 9250 50  0001 C CNN
+F 3 "" H 8450 9250 50  0001 C CNN
+	1    8450 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 9250 7950 9250
+Wire Wire Line
+	7550 9250 7350 9250
+Wire Notes Line
+	8700 9700 6750 9700
+Wire Notes Line
+	6750 8350 6750 9700
+Wire Notes Line
+	8700 8350 8700 9700
 $EndSCHEMATC
