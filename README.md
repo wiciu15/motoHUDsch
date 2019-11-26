@@ -3,7 +3,7 @@ KiCad Schematic and PCB for STM32F103-based motorcycle digital instrument cluste
 
 <b>Firmware - https://github.com/wiciu15/motoHUDini</b>
 
-<b>Enclosure - no link for now :/ </b>
+<b>Enclosure - https://github.com/wiciu15/motoHUDencl </b>
 
 ![3d back](https://i.imgur.com/eafEn4w.png)
 
